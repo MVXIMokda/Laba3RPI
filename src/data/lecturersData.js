@@ -3,8 +3,7 @@ export const lecturers = [
   {
     id: 1,
     name: "Петров Дмитрий Сергеевич",
-    photo:
-      "https://wsrv.nl/?url=lh3.googleusercontent.com/d/1B19BT1_LjzaQXT9qoEOUq8hXyq1CF0PG",
+    photo: "https://storage.yandexcloud.net/lecturers-photos/lector_men_1.png",
     education: "МФТИ, прикладная математика и информатика (2012)",
     experience: "12 лет",
     degree: "Кандидат технических наук",
@@ -65,8 +64,7 @@ export const lecturers = [
   {
     id: 2,
     name: "Соколов Андрей Владимирович",
-    photo:
-      "https://wsrv.nl/?url=lh3.googleusercontent.com/d/1FmgyGki8GSD4n4TKjxErF-XEBILilnIt",
+    photo: "https://storage.yandexcloud.net/lecturers-photos/lector_men_2.png",
     education: "МГУ, биохимия (2010)",
     experience: "14 лет",
     degree: "Доктор биологических наук",
@@ -127,8 +125,7 @@ export const lecturers = [
   {
     id: 3,
     name: "Николаев Игорь Петрович",
-    photo:
-      "https://wsrv.nl/?url=lh3.googleusercontent.com/d/1Hy9Axh0btY3VXg4nAs05MnMAnDF1Ux0j",
+    photo: "https://storage.yandexcloud.net/lecturers-photos/lector_men_3.png",
     education: "ВШЭ, экономика (2015)",
     experience: "9 лет",
     degree: "Кандидат экономических наук",
@@ -189,8 +186,7 @@ export const lecturers = [
   {
     id: 4,
     name: "Фёдоров Алексей Михайлович",
-    photo:
-      "https://wsrv.nl/?url=lh3.googleusercontent.com/d/1KfNEWTZ_N_hy7OfNDTbde5r7-8Uwcm23",
+    photo: "https://storage.yandexcloud.net/lecturers-photos/lector_men_4.png",
     education: "СПбГАСУ, архитектура (2008)",
     experience: "16 лет",
     degree: "Нет",
@@ -254,8 +250,7 @@ export const lecturers = [
   {
     id: 5,
     name: "Лебедев Константин Андреевич",
-    photo:
-      "https://wsrv.nl/?url=lh3.googleusercontent.com/d/1N2anBMH752R9vGT6GJ9_kXKCapLcsE7I",
+    photo: "https://storage.yandexcloud.net/lecturers-photos/lector_men_5.png",
     education: "МФТИ, физика (2013)",
     experience: "11 лет",
     degree: "Кандидат физико-математических наук",
@@ -322,7 +317,7 @@ export const lecturers = [
     id: 6,
     name: "Смирнова Елена Викторовна",
     photo:
-      "https://wsrv.nl/?url=lh3.googleusercontent.com/d/1Vg2rSa0IEnrzmw7I5XTfR3At2QEevDiH",
+      "https://storage.yandexcloud.net/lecturers-photos/lector_women_1.png",
     education: "МГУ, филология (2011)",
     experience: "13 лет",
     degree: "Кандидат филологических наук",
@@ -384,7 +379,7 @@ export const lecturers = [
     id: 7,
     name: "Васильева Ольга Дмитриевна",
     photo:
-      "https://wsrv.nl/?url=lh3.googleusercontent.com/d/1_u7OD9FTY49HsT7k7rqs9-GY95yht6um",
+      "https://storage.yandexcloud.net/lecturers-photos/lector_women_2.png",
     education: "ВШЭ, дизайн (2016)",
     experience: "8 лет",
     degree: "Нет",
@@ -446,7 +441,7 @@ export const lecturers = [
     id: 8,
     name: "Морозова Анна Павловна",
     photo:
-      "https://wsrv.nl/?url=lh3.googleusercontent.com/d/1i-_0TeV60l7Vxi0naXr0O-uZxd4ZDxc_",
+      "https://storage.yandexcloud.net/lecturers-photos/lector_women_3.png",
     education: "МГУ, психология (2014)",
     experience: "10 лет",
     degree: "Кандидат психологических наук",
@@ -511,7 +506,7 @@ export const lecturers = [
     id: 9,
     name: "Козлова Ирина Николаевна",
     photo:
-      "https://wsrv.nl/?url=lh3.googleusercontent.com/d/1lT5BHuCUu-WSFGcpRg16O7b641DB__gw",
+      "https://storage.yandexcloud.net/lecturers-photos/lector_women_4.png",
     education: "МФТИ, прикладная математика (2017)",
     experience: "7 лет",
     degree: "Нет",
@@ -576,7 +571,7 @@ export const lecturers = [
     id: 10,
     name: "Тихонова Мария Сергеевна",
     photo:
-      "https://wsrv.nl/?url=lh3.googleusercontent.com/d/1yTCMX05nW92WMm4YoiG3qbTwpVg8xSlP",
+      "https://storage.yandexcloud.net/lecturers-photos/lector_women_5.png",
     education: "МГИМО, международные отношения (2012)",
     experience: "12 лет",
     degree: "Кандидат политических наук",
