@@ -1,17 +1,77 @@
-# React + Vite
+Вот готовый файл `README.md`, написанный в том же стиле и структуре, что и ваш пример, но адаптированный под реалии вашего проекта (без сторонних библиотек, с локальным стейтом и фото из Yandex Cloud).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Создайте файл `README.md` в корне проекта и вставьте туда этот текст:
 
-Currently, two official plugins are available:
+````markdown
+# Учебная платформа
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Учебный сайт на React и Vite: каталог лекторов, их дисциплины, тарифы и достижения.
 
-## React Compiler
+## Оформление этой версии
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Оформление выполнено в современном стиле согласно предоставленному макету:
 
-## Expanding the ESLint configuration
+- Шапка сайта выполнена в виде плавающей панели с сине-голубым градиентом, скруглёнными углами и кнопкой «Войти».
+- Главный баннер (Hero) использует фоновое изображение с затемняющим оверлеем для контрастного и читабельного текста по центру.
+- Блок «О нас» представлен в виде карточки с тенью, акцентной полосой и тремя смысловыми блоками (фишками).
+- Блок «Партнёры» содержит стилизованные карточки с логотипами компаний, бейджами отраслей и ссылками на официальные сайты.
+- Карточки лекторов выстроены по центру, имеют градиентную обводку вокруг аватарок и бейджи с научными степенями.
+- Сохранена адаптивная вёрстка для корректного отображения на мобильных устройствах.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Laba3RPI
+## Короткий текст для демонстрации
+
+> В проекте реализован интерфейс учебной платформы на React и Vite. Согласно заданию, сторонние библиотеки (включая React Router и UI-киты) не использовались. Переключение между главной страницей и профилем конкретного лектора реализовано через состояние (`useState`) в главном компоненте `App.jsx`.
+>
+> Данные о преподавателях, их дисциплинах и тарифах вынесены в отдельный файл `lecturersData.js`. Фотографии лекторов загружаются из облака Yandex Cloud. Профиль лектора разделён на три логические страницы-блока: «Дисциплины», «Тарифы» и «Достижения». Кнопка «Назад» возвращает пользователя к общему списку.
+
+Порядок показа: главная → блок «Партнеры» → «О нас» → «Лекторы» → клик по карточке лектора → просмотр профиля → возврат назад.
+
+## Стек
+
+JavaScript (JSX), CSS Modules, React, React DOM, Vite.
+Требуется Node.js 18+ и npm. Сторонние библиотеки для маршрутизации или стилизации не используются.
+
+## Запуск
+
+```bash
+npm install
+npm run dev
+```
+````
+
+Откройте адрес, который выведет Vite в терминале (обычно http://localhost:5173).
+Остановка — **Ctrl+C** в терминале с работающим сервером.
+Сборка: `npm run build`; просмотр сборки: `npm run preview`.
+
+## Структура
+
+```text
+public/          — статические файлы и favicon
+src/
+  assets/        — логотипы партнеров, фоновые изображения
+  components/    — переиспользуемые компоненты (Header, Hero, About, Partners, LecturerCard, PersonInfo)
+  data/          — файл с данными лекторов (lecturersData.js)
+  pages/         — блоки профиля лектора (Disciplines, Tariffs, Achievements)
+  App.jsx        — сборка страницы и управление состоянием
+  main.jsx       — точка входа
+index.html       — HTML-шаблон
+vite.config.js   — настройки сборки
+```
+
+## Данные и маршрутизация
+
+Данные хранятся в `src/data/lecturersData.js`.
+Изображения лекторов загружаются напрямую из Yandex Cloud (ссылки прописаны в файле с данными). Логотипы партнеров хранятся локально в `src/assets/`.
+
+Маршрутизация реализована без использования сторонних библиотек (например, React Router). Переходы осуществляются через условный рендеринг: если в состоянии `selectedLecturer` лежит объект, отображается профиль (компонент `PersonInfo` + страницы `Disciplines`, `Tariffs`, `Achievements`), если `null` — отображается главная страница со списком.
+
+````
+
+### Что сделать дальше:
+1. Сохраните файл `README.md` (`Ctrl + S`).
+2. Сделайте коммит и пуш на GitHub:
+   ```bash
+   git add README.md
+   git commit -m "Добавлен README файл с описанием проекта"
+   git push
+````
