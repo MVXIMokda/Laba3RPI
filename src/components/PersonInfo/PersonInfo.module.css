@@ -1,0 +1,2 @@
+.personInfo { display: flex; gap: 20px; padding: 20px; background: #f8f9fa; border-radius: 8px; margin-bottom: 20px; }
+.photo { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #007bff; }

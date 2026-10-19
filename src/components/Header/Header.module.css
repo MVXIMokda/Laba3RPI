@@ -1,0 +1,74 @@
+.header {
+  display: flex;
+  justify-content: space-between; /* Навигация слева, кнопка справа */
+  align-items: center;
+  padding: 0.8rem 2rem;
+  margin: 1rem 2rem;
+  background: linear-gradient(90deg, #89b4e5, #a3c7f0);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navLinks {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.navLinks a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.15rem;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.navLinks a:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+/* Кнопка "Войти" */
+.loginBtn {
+  background: #ffffff;
+  color: #5a8cc7;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+}
+
+.loginBtn:hover {
+  background: #f0f7ff;
+  color: #3a6ea5;
+  transform: translateY(-1px);
+}
+
+.loginBtn:active {
+  transform: translateY(0);
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0.5rem;
+  }
+  .navLinks {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .navLinks a {
+    font-size: 0.95rem;
+  }
+  .loginBtn {
+    width: 100%;
+    text-align: center;
+  }
+}
